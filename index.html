@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>카운터</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        text-align: center;
+        padding: 60px;
+        background: #f5f5f5;
+      }
+      h1 {
+        color: #333;
+      }
+      #num {
+        font-size: 80px;
+        margin: 20px 0;
+      }
+      button {
+        font-size: 20px;
+        padding: 10px 24px;
+        margin: 6px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>카운터</h1>
+    <div id="num">0</div>
+    <button onclick="n--; update()">−</button>
+    <button onclick="n++; update()">+</button>
+    <script>
+      let n = 0;
+      function update() {
+        document.getElementById("num").textContent = n;
+      }
+    </script>
+  </body>
+</html>
